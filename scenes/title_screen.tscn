@@ -1,0 +1,262 @@
+[gd_scene load_steps=14 format=3 uid="uid://cy80ljyd7m0ns"]
+
+[ext_resource type="Script" uid="uid://b0k8hvvwycvgb" path="res://scripts/title_screen.gd" id="1_cs5ya"]
+[ext_resource type="Texture2D" uid="uid://cc4wlxpjvj2iy" path="res://assets/octogon.png" id="2_mykxm"]
+[ext_resource type="Texture2D" uid="uid://cx6vj6fun71m7" path="res://assets/hexagon.png" id="3_tklts"]
+[ext_resource type="Texture2D" uid="uid://bm54pulg1ipc5" path="res://assets/vignette.png" id="4_u26n3"]
+[ext_resource type="Texture2D" uid="uid://bg6tb0xmsnh2g" path="res://assets/gradient.png" id="5_ib7db"]
+[ext_resource type="Texture2D" uid="uid://dblhqqdvucvri" path="res://assets/dust.jpg" id="6_frs5l"]
+[ext_resource type="Theme" uid="uid://dfw7lrrxmofku" path="res://assets/text_box_theme.tres" id="7_mynnq"]
+[ext_resource type="FontFile" uid="uid://51nnvssc4vny" path="res://assets/LeagueSpartan-Bold.otf" id="8_e8tpv"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_wot2p"]
+blend_mode = 3
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_kvwfe"]
+blend_mode = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l4tom"]
+content_margin_left = 32.0
+content_margin_right = 32.0
+bg_color = Color(0.14902, 0.14902, 0.14902, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_y8ura"]
+line_spacing = 12.0
+font = ExtResource("8_e8tpv")
+font_size = 18
+
+[sub_resource type="LabelSettings" id="LabelSettings_cs5ya"]
+line_spacing = 0.0
+font = ExtResource("8_e8tpv")
+
+[node name="Title screen" type="Control"]
+z_index = 2
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cs5ya")
+
+[node name="VisualsGroup" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="VisualsGroup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.47451, 0.486275, 0.466667, 1)
+metadata/_edit_lock_ = true
+
+[node name="Shape" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.223529, 0.239216, 0.231373, 0.235294)
+layout_mode = 0
+offset_left = -224.0
+offset_top = -232.0
+offset_right = 176.0
+offset_bottom = 168.0
+pivot_offset = Vector2(200, 200)
+texture = ExtResource("2_mykxm")
+
+[node name="Shape2" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.223529, 0.239216, 0.231373, 0.235294)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -176.0
+offset_top = -160.0
+offset_right = 224.0
+offset_bottom = 240.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(200, 200)
+texture = ExtResource("2_mykxm")
+
+[node name="Shape3" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.172549, 0.215686, 0.247059, 0.105882)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -400.0
+offset_top = -400.0
+offset_right = 400.0
+offset_bottom = 400.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(400, 400)
+texture = ExtResource("3_tklts")
+
+[node name="Shape4" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.270588, 0.317647, 0.32549, 0.235294)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -320.0
+offset_right = 320.0
+offset_bottom = 320.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(320, 320)
+texture = ExtResource("3_tklts")
+
+[node name="Vignette" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.0313726, 0.196078, 0.454902, 0.14902)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_u26n3")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="CornerGradient" type="TextureRect" parent="VisualsGroup"]
+material = SubResource("CanvasItemMaterial_wot2p")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_ib7db")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="DustTexture" type="TextureRect" parent="VisualsGroup"]
+modulate = Color(0.172549, 0.203922, 0.337255, 0.192157)
+material = SubResource("CanvasItemMaterial_kvwfe")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_frs5l")
+expand_mode = 1
+metadata/_edit_lock_ = true
+
+[node name="Wipe" type="ColorRect" parent="VisualsGroup"]
+visible = false
+top_level = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.262745, 0.239216, 0.494118, 1)
+
+[node name="Modulate" type="ColorRect" parent="VisualsGroup"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0470588, 0, 1, 0.235294)
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+z_index = 5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Info" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Info"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Quit"
+
+[node name="Info" type="Label" parent="."]
+visible = false
+z_index = 5
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("7_mynnq")
+theme_override_styles/normal = SubResource("StyleBoxFlat_l4tom")
+text = "In-game only controls:
+Open pause menu by pressing “0” [zero]
+Toggle hints on/off by pressing “1” (after clicking on it for the first time)"
+label_settings = SubResource("LabelSettings_y8ura")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="Back" type="Button" parent="Info"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.0
+offset_top = 187.5
+offset_right = 26.0
+offset_bottom = 223.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Back"
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -89.0
+offset_top = -113.5
+offset_right = 87.0
+offset_bottom = -92.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(1, 11)
+theme = ExtResource("7_mynnq")
+text = "Azerdle Clone"
+label_settings = SubResource("LabelSettings_cs5ya")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Info" to="." method="_on_info_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Info/Back" to="." method="_on_back_pressed"]
