@@ -72,7 +72,7 @@ To access and work with this project you will need to instal ***Godot***.
 Link to download: [https://godotengine.org/download/windows/](https://godotengine.org/download/windows/) \
 **How to run for first time**:
 - download Godot engine
-- unzip the file with Godot and start the .exe file
+- unzip the file map with Godot and start the .exe file
 - download this project and unzip it
 - open the project in Godot and run it
 
