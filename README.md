@@ -68,8 +68,8 @@ _Project made with ***Godot*** 4.4. - This is a clone of ***Azerdle*** made by *
 ```_on_quit_pressed()``` - receives a signal and stops the program.
 
 ## Installation and use
-To access and work with this project you will need to instal ***Godot***.
-Link to download: [https://godotengine.org/download/windows/](https://godotengine.org/download/windows/) \
+To access and work with this project you will need to instal ***Godot***. \
+**Link to download**: [https://godotengine.org/download/windows/](https://godotengine.org/download/windows/) \
 **How to run for first time**:
 - download Godot engine
 - unzip the file map with Godot and start the .exe file
