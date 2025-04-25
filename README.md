@@ -1,5 +1,5 @@
 # **Azerdle clone**
-## Discription:
+## Description:
 _Project made with ***Godot*** 4.4. - This is a clone of ***Azerdle*** made by ***Awfyboy***._
 
 #### Within this project:
@@ -69,6 +69,13 @@ _Project made with ***Godot*** 4.4. - This is a clone of ***Azerdle*** made by *
 
 ## Installation and use
 To access and work with this project you will need to instal ***Godot***.
+Link to download: [https://godotengine.org/download/windows/](https://godotengine.org/download/windows/) \
+**How to run for first time**:
+- download Godot engine
+- unzip the file with Godot and start the .exe file
+- download this project and unzip it
+- open the project in Godot and run it
+
 
 ## User guide when running the code
 After clicking on the title screen button “**play**” you can simply type letters and submit answers for evaluation, as well as turn the background music on or off just like in Azerdle, but you can also check the hints by using the toggle button or pressing “**1**”.\
